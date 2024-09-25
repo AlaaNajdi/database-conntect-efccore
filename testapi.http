@@ -1,0 +1,23 @@
+@testapi_HostAddress = http://localhost:5102
+
+GET {{testapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET http://localhost:5102
+
+###
+
+GET http://localhost:5102/api/v1/users
+
+###
+
+POST http://localhost:5102/api/v1/users
+Content-Type: application/json
+
+{
+  "name" : "anis",
+  "email" : "anis@gmail.com",
+  "password": "123456"
+}
